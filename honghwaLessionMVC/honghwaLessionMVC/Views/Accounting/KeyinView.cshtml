@@ -1,0 +1,51 @@
+﻿@model honghwaLessionMVC.Models.ViewModels.KeyinModel
+
+@{
+    ViewBag.Title = "KeyinView";
+}
+
+<h2></h2>
+<div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2">類別</label>
+            <div class="col-md-10">
+                <select class="form-control">
+                    <option>支出</option>
+                    <option>收入</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">金額</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">日期</label>
+
+            <div class="col-md-10">
+                <input type="text" class="form-control" />
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">備註</label>
+            <div class="col-md-10">
+                <textarea class="form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="送出" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Action("ShowData")
